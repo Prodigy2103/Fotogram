@@ -17,11 +17,11 @@ function addView(element) {
             <img id="currentImage" class="cardViewImg" src='${element.path}' alt='${element.alt}'>
 
             <div class="endBtn">
-                <button id="previousBtn">prev</button>
+                <button id="previousBtn"><</button>
 
                 <p>ID:<span id="cardId">${element.id}</span></p>
 
-                <button id="nextBtn">next</button>
+                <button id="nextBtn">></button>
             </div>
         </div>
     </div>
