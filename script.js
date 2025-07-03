@@ -123,34 +123,6 @@ function closeViewCard() {
     document.getElementById("cardView-Bg").classList.add("d_none");
 }
 
-function updateAddView(i) {
-    let nextIndex = i + 1;
-    if (nextIndex >= pictureCollection.length - 1) {
-        nextIndex = 0;
-    }
-    const element = pictureCollection[nextIndex];
-
-    document.getElementById("currentImage").src = element.path;
-    document.getElementById("title").innerText = element.name;
-    document.getElementById("cardId").innerText = element.id;
-
-    setBtns(nextIndex);
-}
-
-function updateAddView(i) {
-    let prevIndex = i - 1;
-    if (prevIndex < 0) {
-        prevIndex >= pictureCollection.length - 1;
-    }
-    const element = pictureCollection[prevIndex];
-
-    document.getElementById("currentImage").src = element.path;
-    document.getElementById("title").innerText = element.name;
-    document.getElementById("cardId").innerText = element.id;
-
-    setBtns(prevIndex);
-}
-
 function getEndBtn(i) {
     const imageCounter = document.getElementById("imageCounter");
     if (imageCounter) {
