@@ -166,100 +166,95 @@ header {
     z-index: 10;
 
     #pictureDetails {
+        background: teal;
         width: 70%;
-        height: 70dvh;
+        height: 80dvh;
         display: flex;
         justify-content: center;
         align-items: center;
+        background: rgb(84, 84, 104);
+        border-radius: 30px;
+
+        @media (max-width: 640px) {
+            height: 50dvh;
+        }
+
+        @media (max-width: 480px) {
+            height: 45dvh;
+        }
+
+        @media (max-width: 375px) {
+            height: 35dvh;
+        }
 
         .content {
-            display: flex;
-            justify-content: center;
+        }
+
+        .headline {
             width: 100%;
-            height: 80dvh;
-            background: rgb(84, 84, 104);
-            border-radius: 30px;
+            height: 10%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            font-size: calc(16px + 0.2dvw);
 
-            @media (max-width: 640px) {
-                height: 50dvh;
+            button {
+                width: 50px;
+                height: 50px;
+                border-radius: 25px;
+                cursor: pointer;
+
+                @media (max-width: 600px) {
+                    width: 40px;
+                    height: 40px;
+                }
+
+                @media (max-width: 450px) {
+                    width: 30px;
+                    height: 30px;
+                }
             }
+        }
 
-            @media (max-width: 480px) {
-                height: 45dvh;
-            }
+        #title {
+            width: 80%;
+            color: white;
+        }
 
-            @media (max-width: 375px) {
-                height: 35dvh;
-            }
+        .endBtn {
+            width: 100%;
+            height: 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
 
-            #title {
-                font-size: calc(16px + 0.3dvw);
-                color: white;
+            button {
+                width: 50px;
+                height: 50px;
+                border-radius: 25px;
+                cursor: pointer;
 
-                @media (max-width: 380px){
-                    font-size: 14px;
+                @media (max-width: 600px) {
+                    width: 40px;
+                    height: 40px;
+                }
+
+                @media (max-width: 450px) {
+                    width: 30px;
+                    height: 30px;
                 }
             }
 
-            .headline {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                gap: 60px;
-
-                @media (max-width: 580px) {
-                    gap: 30px;
-                }
-
-                button {
-                    width: 50px;
-                    height: 50px;
-                    border-radius: 25px;
-                    cursor: pointer;
-
-                    @media (max-width: 600px) {
-                        width: 40px;
-                        height: 40px;
-                    }
-
-                    @media (max-width: 450px) {
-                        width: 30px;
-                        height: 30px;
-                    }
-                }
-            }
-
-            .endBtn {
+            p {
                 width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 100px;
-
-                @media (max-width: 580px) {
-                    gap: 60px;
-                }
-
-                @media (max-width: 375px) {
-                    gap: 30px;
+                color: white;
+                text-align: center;
+                font-size: calc(16px + 0.9dvw);
             }
 
-                button {
-                    width: 50px;
-                    height: 50px;
-                    border-radius: 25px;
-                    cursor: pointer;
-
-                    @media (max-width: 600px) {
-                        width: 40px;
-                        height: 40px;
-                    }
-
-                    @media (max-width: 450px) {
-                        width: 30px;
-                        height: 30px;
-                    }
-                }
+            #cardId {
+                color: white;
             }
         }
     }
@@ -267,7 +262,7 @@ header {
 
 .cardViewImg {
     width: 100%;
-    height: 60dvh;
+    height: 80%;
     object-fit: cover;
     border-radius: 10px;
     margin: 30px 0;

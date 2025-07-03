@@ -7,8 +7,7 @@ function renderSinglePicture(i, element) {
 function addView(element) {
     return /*html*/ `
     
-    <div id="pictureDetails">
-        <div class="content">
+    <div id="pictureDetails" class="content">
             <div class="headline">
                 <h2 id="title">'${element.name}'</h2>
                 <button id="closeBtn">X</button>
@@ -19,11 +18,10 @@ function addView(element) {
             <div class="endBtn">
                 <button id="previousBtn"><</button>
 
-                <p>ID:<span id="cardId">${element.id}</span></p>
+                <p>ID: <span id="cardId"> ${element.id}</span></p>
 
                 <button id="nextBtn">></button>
             </div>
-        </div>
     </div>
 `;
 }
